@@ -12,7 +12,9 @@ AutoHotkey v2 で「手をホームポジションからなるべく動かさな
 - HHKB側の設定が未反映だと、`sc07B` / `sc079` をトリガーにしたホットキーが発火せず、スクリプトの主要機能が「効かない」状態になります
 - 不安な場合は AutoHotkey の KeyHistory 等で、意図したキーが `sc07B` / `sc079` として認識されているか確認してください
 
-![HHKB keymap](hhkb.jpg)
+<a href="hhkb.jpg">
+   <img src="hhkb.jpg" alt="HHKB keymap" width="900" />
+</a>
 
 ## 必要環境
 
@@ -32,8 +34,7 @@ AutoHotkey v2 で「手をホームポジションからなるべく動かさな
 
 ### Hotstring
 
-- `!cmd` → コマンドプロンプト起動
-- `!date` → `yyyy/MM/dd` を入力
+- `!ime` → Google 日本語入力の設定ダイアログを開く
 - `!size` → アクティブウィンドウの `x,y,w,h` を入力
 
 ### 右Shiftレイヤー（`>+`）
