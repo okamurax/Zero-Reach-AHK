@@ -24,22 +24,8 @@ CoordMode "Mouse", "Window"
 # Hotstring
 */
 
-:*:!cmd:: {
-  Run A_ComSpec
-}
-
-:*:!date:: {
-  SendText FormatTime(, "yyyy/MM/dd")
-}
-
 :*:!ime:: {
-  exe := "C:\\Program Files (x86)\\Google\\Google Japanese Input\\GoogleIMEJaTool.exe"
-  If !FileExist(exe)
-  {
-    MsgBox "GoogleIMEJaTool.exe が見つかりません: `n" exe
-    Return
-  }
-  Run '"' exe '" -mode=config_dialog'
+  Run '"C:\\Program Files (x86)\\Google\\Google Japanese Input\\GoogleIMEJaTool.exe" -mode=config_dialog'
 }
 
 :*:!size:: {
