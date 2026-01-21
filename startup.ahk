@@ -12,8 +12,6 @@ CoordMode "Mouse", "Window"
 # Google IME
 */
 
-; "C:\Program Files (x86)\Google\Google Japanese Input\GoogleIMEJaTool.exe" -mode=config_dialog
-
 ; Hiragana＞IMEを有効化
 ; Muhenkan＞IMEを無効化
 
@@ -32,6 +30,16 @@ CoordMode "Mouse", "Window"
 
 :*:!date:: {
   SendText FormatTime(, "yyyy/MM/dd")
+}
+
+:*:!ime:: {
+  exe := "C:\\Program Files (x86)\\Google\\Google Japanese Input\\GoogleIMEJaTool.exe"
+  If !FileExist(exe)
+  {
+    MsgBox "GoogleIMEJaTool.exe が見つかりません: `n" exe
+    Return
+  }
+  Run '"' exe '" -mode=config_dialog'
 }
 
 :*:!size:: {
