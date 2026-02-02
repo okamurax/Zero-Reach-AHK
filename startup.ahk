@@ -1,10 +1,14 @@
 ﻿; ^Ctrl, !Alt, +Shif, #Win
 
+#Requires AutoHotkey v2.0
+#SingleInstance Force
 ProcessSetPriority "High"
 SetMouseDelay -1
+SetKeyDelay -1
 SendMode "Input"
 A_MaxHotkeysPerInterval := 200
 InstallKeybdHook
+InstallMouseHook
 #UseHook
 CoordMode "Mouse", "Window"
 
@@ -102,11 +106,11 @@ sc07B & sc079::Send "!{Space}" ; CLaunch
 # Shift
 */
 
-~LShift::
+~LShift up::
 {
   If (A_PriorHotkey = A_ThisHotkey && 500 > A_TimeSincePriorHotkey)
   {
-    Run "G:\Dropbox\Workspace\CodeSnippets\SnippetViewer\bin\Release\net8.0-windows\win-x64\SnippetViewer.exe" 
+    Run "G:\Dropbox\Workspace\CodeSnippets\SnippetViewer\bin\Release\net8.0-windows\win-x64\SnippetViewer.exe"
   }
 }
 
