@@ -99,6 +99,18 @@ sc07B & sc079::Send "!{Space}" ; CLaunch
 }
 
 /*
+# Shift
+*/
+
+~LShift::
+{
+  If (A_PriorHotkey = A_ThisHotkey && 500 > A_TimeSincePriorHotkey)
+  {
+    Run "G:\Dropbox\Workspace\CodeSnippets\SnippetViewer\bin\Release\net8.0-windows\win-x64\SnippetViewer.exe" 
+  }
+}
+
+/*
 # SpaceLeft
 */
 

@@ -43,9 +43,15 @@ AutoHotkey v2 で「手をホームポジションからなるべく動かさな
 
 - `右Shift+4` → Enter
 - `右Shift+7/8` → Home / End
+- `右Shift+9` → `.`
 - `右Shift+h/j/k/l` → ←/↓/↑/→
 - `右Shift+Backspace` → Delete
-- 記号入力（例: `右Shift+q`→`&`, `右Shift+w`→`'`, `右Shift+n/m`→`(`/`)` など）
+- 記号入力
+  - `右Shift+q/w` → `&` / `'`
+  - `右Shift+a/s` → `~` / `` ` ``
+  - `右Shift+z/x` → `^` / `$`
+  - `右Shift+u/i/o/p` → `|` / `\` / `@` / `%`
+  - `右Shift+n/m` → `(` / `)`
 
 ### 無変換キー（`sc07B`）レイヤー
 
@@ -56,6 +62,10 @@ AutoHotkey v2 で「手をホームポジションからなるべく動かさな
 - `sc07B+q` → Esc
 - `sc07B+w` → Win+S
 - `sc07B+sc079` → Alt+Space（例: CLaunch を想定）
+
+### 左Shiftダブルタップ
+
+- `LShift` を短時間で2回押す → SnippetViewer を起動
 
 ### 左スペース相当（`sc079`）レイヤー
 
@@ -72,6 +82,11 @@ AutoHotkey v2 で「手をホームポジションからなるべく動かさな
 `MonitorGetWorkArea()` でワークエリアを取得して最大化相当の配置を行います。
 一部アプリ（Obsidian / Mattermost / PDFelement / LINE / VS Code）は余白込みで配置するよう分岐しています（`isOverflowProcess()`）。
 
+#### ナビゲーション
+
+- `sc079+3` → Ctrl+Home（先頭へ）
+- `sc079+4` → Ctrl+End（末尾へ）
+
 #### ブラウザ／タブ操作
 
 - `sc079+q/w` → Alt+← / Alt+→（戻る/進む）
@@ -79,6 +94,18 @@ AutoHotkey v2 で「手をホームポジションからなるべく動かさな
 - `sc079+a/s` → Ctrl+Shift+Tab / Ctrl+Tab（前/次タブ）
 - `sc079+d` → Ctrl+Shift+T（閉じたタブを復元）
 - `sc079+f` → Ctrl+F5（更新）
+- `sc079+g` → Alt+Shift+G（Chrome拡張用）
+- `sc079+z` → Alt+Shift+Z（Chrome拡張用）
+
+#### マウス移動支援
+
+- `sc079+c` → マウスをタイトルバー中央に移動（ウィンドウドラッグ用）
+- `sc079+v` → マウスをウィンドウ右下に移動（リサイズ用）
+
+#### ShareX
+
+- `sc079+^` → Ctrl+^
+- `sc079+\` → Ctrl+\
 
 #### マウス支援
 
@@ -112,7 +139,7 @@ AutoHotkey v2 で「手をホームポジションからなるべく動かさな
 
 ### MPC-BE
 
-- `w/e/r/s/d/f` などにテンキー操作を割り当て（シーク等を想定）
+- `w/e/r/s/d/f/c/v` などにテンキー操作を割り当て（シーク等を想定）
 
 ## カスタマイズのヒント
 
